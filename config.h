@@ -7,6 +7,8 @@
  */
 static char *font = "mono:pixelsize=14:antialias=true:autohint=true";
 static char *font2[] = { "JoyPixels:pixelsize=10:antialias=true:autohint=true" };
+//static char *font = "SFMono Nerd Font:pixelsize=13:antialias=true:autohint=false";
+//static char *font2[] = { "SFMono Nerd Font:pixelsize=13:antialias=true:autohint=false" };
 static int borderpx = 2;
 
 /*
@@ -110,30 +112,111 @@ unsigned int tabspaces = 8;
 /* bg opacity */
 float alpha = 0.8;
 
+///* Terminal colors (16 first used in escape sequence) */
+//static const char *colorname[] = {
+//	"#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
+//	"#cc241d",
+//	"#98971a",
+//	"#d79921",
+//	"#458588",
+//	"#b16286",
+//	"#689d6a",
+//	"#a89984",
+//	"#928374",
+//	"#fb4934",
+//	"#b8bb26",
+//	"#fabd2f",
+//	"#83a598",
+//	"#d3869b",
+//	"#8ec07c",
+//	"#ebdbb2",
+//	[255] = 0,
+//	/* more colors can be added after 255 to use with DefaultXX */
+//	"#add8e6", /* 256 -> cursor */
+//	"#555555", /* 257 -> rev cursor*/
+//	"#282828", /* 258 -> bg */
+//	"#ebdbb2", /* 259 -> fg */
+//};
+
+
+/*
+ * Default colors (colorname index)
+ * foreground, background, cursor, reverse cursor
+ */
+//unsigned int defaultfg = 259;
+//unsigned int defaultbg = 258;
+//unsigned int defaultcs = 256;
+//unsigned int defaultrcs = 257;
+
+
+////////////////////////////////////////////////////////////////// nord theme
+/* Terminal colors (16 first used in escape sequence) */
+//static const char *colorname[] = {
+//	/* 8 normal colors */
+//	"#3b4252", /* black   */
+//	"#bf616a", /* red     */
+//	"#a3be8c", /* green   */
+//	"#ebcb8b", /* yellow  */
+//	"#81a1c1", /* blue    */
+//	"#b48ead", /* magenta */
+//	"#88c0d0", /* cyan    */
+//	"#e5e9f0", /* white   */
+//
+//	/* 8 bright colors */
+//	"#4c566a", /* black   */
+//	"#bf616a", /* red     */
+//	"#a3be8c", /* green   */
+//	"#ebcb8b", /* yellow  */
+//	"#81a1c1", /* blue    */
+//	"#b48ead", /* magenta */
+//	"#8fbcbb", /* cyan    */
+//	"#eceff4", /* white   */
+//
+//	[255] = 0,
+//
+//	/* more colors can be added after 255 to use with DefaultXX */
+//	"#2e3440", /* background */
+//	"#d8dee9", /* foreground */
+//};
+//
+//
+///*
+// * Default colors (colorname index)
+// * foreground, background, cursor, reverse cursor
+// */
+//unsigned int defaultfg = 257;
+//unsigned int defaultbg = 256;
+//unsigned int defaultcs = 257;
+//unsigned int defaultrcs = 256;
+
+////////////////////////////////////////////////////////////////// gruvbox theme
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	"#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
-	"#cc241d",
-	"#98971a",
-	"#d79921",
-	"#458588",
-	"#b16286",
-	"#689d6a",
-	"#a89984",
-	"#928374",
+	/* 8 normal colors */
+	"#282828",
 	"#fb4934",
 	"#b8bb26",
 	"#fabd2f",
 	"#83a598",
-	"#d3869b",
+	"#fe8019",
 	"#8ec07c",
 	"#ebdbb2",
+
+	/* 8 bright colors */
+	"#928374",
+	"#cc241d",
+	"#98971a",
+	"#d79921",
+	"#458588",
+	"#d65d0e",
+	"#689d6a",
+	"#a89984",
+
 	[255] = 0,
+
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#add8e6", /* 256 -> cursor */
-	"#555555", /* 257 -> rev cursor*/
-	"#282828", /* 258 -> bg */
-	"#ebdbb2", /* 259 -> fg */
+	"#cccccc",
+	"#555555",
 };
 
 
@@ -141,10 +224,15 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 259;
-unsigned int defaultbg = 258;
-unsigned int defaultcs = 256;
+unsigned int defaultfg = 7;
+unsigned int defaultbg = 0;
+//static unsigned int defaultcs = 7;
+//static unsigned int defaultrcs = 257;
+unsigned int defaultcs = 7;
 unsigned int defaultrcs = 257;
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
 
 /*
  * Default shape of cursor
